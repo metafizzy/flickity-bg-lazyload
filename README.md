@@ -4,6 +4,8 @@ Lazyload background images of selected cells.
 
 ## Install
 
+Download/CDN: [bg-lazyload.js](https://npmcdn.com/flickity-bg-lazyload@1/bg-lazyload.js)
+
 npm: `npm install flickity-bg-lazyload`
 
 Bower: `bower install flickity-bg-lazyload`
