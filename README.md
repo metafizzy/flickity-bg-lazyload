@@ -40,7 +40,7 @@ var flkty = new Flickity( '.carousel', {
 Set `bgLazyLoad` to a number to load images in adjacent cells.
 
 ``` js
-lazyLoad: 2
+bgLazyLoad: 2
 // load background images in selected cell
 // and next 2 cells
 // and previous 2 cells
