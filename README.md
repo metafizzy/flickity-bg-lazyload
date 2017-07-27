@@ -59,7 +59,7 @@ requirejs( [ 'path/to/flickity-bg-lazyload' ], function( Flickity ) {
 ### Browserify
 
 ``` js
-var Flickity = require('flickity-flickity-bg-lazyload');
+var Flickity = require('flickity-bg-lazyload');
 
 var flkty = new Flickity( '.carousel', {
   bgLazyLoad: true
