@@ -93,7 +93,7 @@ BgLazyLoader.prototype.load = function() {
 };
 
 BgLazyLoader.prototype.onload = function( event ) {
-  this.element.style.backgroundImage = 'url(' + this.url + ')';
+  this.element.style.backgroundImage = 'url("' + this.url + '")';
   this.complete( event, 'flickity-bg-lazyloaded' );
 };
 
