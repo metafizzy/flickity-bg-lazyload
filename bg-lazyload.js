@@ -1,5 +1,5 @@
 /**
- * Flickity background lazyload v1.0.0
+ * Flickity background lazyload v1.0.1
  * lazyload background cell images
  */
 

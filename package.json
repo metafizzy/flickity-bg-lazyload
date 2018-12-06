@@ -1,6 +1,6 @@
 {
   "name": "flickity-bg-lazyload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flickity lazyload background images",
   "main": "bg-lazyload.js",
   "dependencies": {
