@@ -8,19 +8,19 @@ Add `bg-lazyload.js` to your scripts.
 
 ### Download
 
-[bg-lazyload.js](https://unpkg.com/flickity-bg-lazyload@1/bg-lazyload.js)
+[bg-lazyload.js](https://unpkg.com/flickity-bg-lazyload@2/bg-lazyload.js)
 
 ### CDN
 
 ``` html
-<script src="https://unpkg.com/flickity-bg-lazyload@1/bg-lazyload.js"></script>
+<script src="https://unpkg.com/flickity-bg-lazyload@2/bg-lazyload.js"></script>
 ```
 
 ### Package managers
 
 npm: `npm install flickity-bg-lazyload`
 
-Bower: `bower install flickity-bg-lazyload`
+Yarn: `bower add flickity-bg-lazyload`
 
 ## Usage
 
@@ -39,14 +39,14 @@ Set `bgLazyLoad` option.
 ``` js
 // lazyloads background image of selected cell
 // jQuery
-var $carousel = $('.carousel').flickity({
+let $carousel = $('.carousel').flickity({
   bgLazyLoad: true
 });
 ```
 
 ``` js
 // vanilla JS
-var flkty = new Flickity( '.carousel', {
+let flkty = new Flickity( '.carousel', {
   bgLazyLoad: true
 });
 ```
@@ -60,24 +60,14 @@ bgLazyLoad: 2
 // and previous 2 cells
 ```
 
-### Webpack & Browserify
+### Webpack
 
 ``` js
-var Flickity = require('flickity-bg-lazyload');
+const Flickity = require('flickity');
+require('flickity-bg-lazyload');
 
-var flkty = new Flickity( '.carousel', {
+let flkty = new Flickity( '.carousel', {
   bgLazyLoad: true
-});
-```
-
-
-### RequireJS
-
-``` js
-requirejs( [ 'path/to/flickity-bg-lazyload' ], function( Flickity ) {
-  var flkty = new Flickity( '.carousel', {
-    bgLazyLoad: true
-  });
 });
 ```
 
