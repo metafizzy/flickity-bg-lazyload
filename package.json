@@ -1,20 +1,25 @@
 {
   "name": "flickity-bg-lazyload",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Flickity lazyload background images",
   "main": "bg-lazyload.js",
+  "peerDependencies": {
+    "flickity": "^3.0.0"
+  },
   "dependencies": {
-    "flickity": "^2.0.0",
-    "fizzy-ui-utils": "^2.0.2"
+    "fizzy-ui-utils": "^3.0.0"
   },
   "devDependencies": {
-    "qunit": "^2.0.0"
+    "eslint": "^8.10.0",
+    "eslint-plugin-metafizzy": "^2.0.1",
+    "qunit": "^2.18.0"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "npx eslint ."
   },
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@
 
   <title>Flickity bgLazyLoad</title>
 
-  <link rel="stylesheet" href="../bower_components/flickity/css/flickity.css" media="screen" />
+  <link rel="stylesheet" href="../node_modules/flickity/css/flickity.css" media="screen" />
 
   <style>
     .carousel {
@@ -29,47 +29,44 @@
   <h1>Flickity bgLazyLoad</h1>
 
   <div class="carousel">
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/r8p3Xgq.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/q9zO6tw.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/bwy74ok.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/hODreXI.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/UORFJ3w.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/bAZWoqx.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/PgmEBSB.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/aboaFoB.jpg"></div>
-    <div class="cell" data-flickity-bg-lazyload="http://i.imgur.com/LkmcILl.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/r8p3Xgq.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/q9zO6tw.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/bwy74ok.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/hODreXI.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/UORFJ3w.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/bAZWoqx.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/PgmEBSB.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/aboaFoB.jpg"></div>
+    <div class="cell" data-flickity-bg-lazyload="https://i.imgur.com/LkmcILl.jpg"></div>
   </div>
 
 <!-- dependencies -->
-<script src="../bower_components/get-size/get-size.js"></script>
-<script src="../bower_components/desandro-matches-selector/matches-selector.js"></script>
-<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
-<script src="../bower_components/fizzy-ui-utils/utils.js"></script>
-<script src="../bower_components/unipointer/unipointer.js"></script>
-<script src="../bower_components/unidragger/unidragger.js"></script>
-<script src="../bower_components/tap-listener/tap-listener.js"></script>
+<script src="../node_modules/get-size/get-size.js"></script>
+<script src="../node_modules/ev-emitter/ev-emitter.js"></script>
+<script src="../node_modules/fizzy-ui-utils/utils.js"></script>
+<script src="../node_modules/unidragger/unidragger.js"></script>
 <!-- Flickity source -->
-<script src="../bower_components/flickity/js/cell.js"></script>
-<script src="../bower_components/flickity/js/slide.js"></script>
-<script src="../bower_components/flickity/js/animate.js"></script>
-<script src="../bower_components/flickity/js/flickity.js"></script>
-<script src="../bower_components/flickity/js/drag.js"></script>
-<script src="../bower_components/flickity/js/prev-next-button.js"></script>
-<script src="../bower_components/flickity/js/page-dots.js"></script>
-<script src="../bower_components/flickity/js/player.js"></script>
-<script src="../bower_components/flickity/js/add-remove-cell.js"></script>
-<script src="../bower_components/flickity/js/lazyload.js"></script>
+<script src="../node_modules/flickity/js/cell.js"></script>
+<script src="../node_modules/flickity/js/slide.js"></script>
+<script src="../node_modules/flickity/js/animate.js"></script>
+<script src="../node_modules/flickity/js/core.js"></script>
+<script src="../node_modules/flickity/js/drag.js"></script>
+<script src="../node_modules/flickity/js/prev-next-button.js"></script>
+<script src="../node_modules/flickity/js/page-dots.js"></script>
+<script src="../node_modules/flickity/js/player.js"></script>
+<script src="../node_modules/flickity/js/add-remove-cell.js"></script>
+<script src="../node_modules/flickity/js/lazyload.js"></script>
 
 <script src="../bg-lazyload.js"></script>
 
 <script>
-var flkty = new Flickity( '.carousel', {
+let flkty = new Flickity( '.carousel', {
   bgLazyLoad: true
 });
 
-// flkty.on( 'bgLazyLoad', function( event, elem ) {
-//   console.log( event.type, elem );
-// });
+flkty.on( 'bgLazyLoad', function( event, elem ) {
+  console.log( event.type, elem );
+});
 </script>
 
 </body>
